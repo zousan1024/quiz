@@ -1,11 +1,11 @@
 const quizData = [
   {
-    question: "日本の首都はどこですか？",
+    question: "今の日本の総理大臣は誰ですか？",
     choices: [
-      { text: "大阪" },
-      { text: "京都" },
-      { text: "東京" },
-      { text: "札幌" },
+      { text: "安倍晋三 総理" },
+      { text: "岸田文雄 総理" },
+      { text: "石破茂 総理" },
+      { text: "原敬 総理" },
     ],
     correct: 2,
   },
