@@ -1,61 +1,43 @@
 const quizData = [
   {
-    question: "今の日本の総理大臣は誰ですか？",
+    question: "玉ねぎの根の成長を観察したとき、もっとも成長しやすいのはどの部分か。",
     choices: [
-      { text: "安倍晋三 総理" },
-      { text: "岸田文雄 総理" },
-      { text: "石破茂 総理" },
-      { text: "原敬 総理" },
-    ],
-    correct: 2,
-  },
-  {
-    question: "富士山の標高は何メートルですか？",
-    choices: [
-      { text: "3,776メートル" },
-      { text: "4,000メートル" },
-      { text: "2,500メートル" },
-      { text: "3,500メートル" },
-    ],
-    correct: 0,
-  },
-  {
-    question: "日本で一番面積の大きい都道府県はどこですか？",
-    choices: [
-      { text: "北海道" },
-      { text: "沖縄県" },
-      { text: "愛知県" },
-      { text: "兵庫県" },
-    ],
-    correct: 0,
-  },
-  {
-    question: "日本で最も長い川はどれですか？",
-    choices: [
-      { text: "利根川" },
-      { text: "信濃川" },
-      { text: "淀川" },
-      { text: "木曽川" },
+      { text: "茎の先端付近" },
+      { text: "根の先端付近" },
     ],
     correct: 1,
   },
   {
-    question: "桜の花が咲く時期は一般的にいつですか？",
+    question: "根の最も先端にあり、成長点（最も成長するところ）を保護している部分を何というか。",
     choices: [
-        { text: "夏" }, 
-        { text: "秋" }, 
-        { text: "冬" }, 
-        { text: "春" },
+      { text: "根冠" },
+      { text: "冠根" },
     ],
-    correct: 3,
+    correct: 0,
+  },
+  {
+    question: "タマネギの細胞分裂を観察する際は、細胞をばらばらにするため、あたためた何につけるか。",
+    choices: [
+      { text: "うすい塩酸" },
+      { text: "うすい酢酸" },
+    ],
+    correct: 0,
+  },
+  {
+    question: "タマネギの細胞分裂を観察するプレパラートをつくるときは、カバーガラスを押して少しつぶす。これはなぜか。",
+    choices: [
+      { text: "細胞をちゃんとつぶすため。" },
+      { text: "細胞の重なりをなくして観察しやすくするため。" },
+    ],
+    correct: 1,
   },
 ];
 
-const totalQuestions = 5; // 出題する問題数を設定
+const totalQuestions = 4; // 出題する問題数を設定
 let currentQuiz = quizData;
 let currentQuestion = 0;
 let score = 0;
-//const totalQuestions = 5; // 出題する問題数を5に設定
+//const totalQuestions = 4; // 出題する問題数を4に設定
 document.getElementById("total-questions").textContent = totalQuestions;
 
 // 問題を指定数だけ取得（ランダムではなく、最初から totalQuestions 分だけ取得する）
