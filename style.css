@@ -61,10 +61,13 @@ body {
 }
 
 .choice {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 60px;
   margin: 5px 5px;
   background-color: #d8a35f;
   padding: 15px;
-  text-align: center;
   cursor: pointer;
   border: 2px solid black;
   border-radius: 10px;
